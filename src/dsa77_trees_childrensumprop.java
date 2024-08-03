@@ -11,7 +11,7 @@ public class dsa77_trees_childrensumprop {
 
     static boolean childsum(node19 root){
         if(root==null){
-            return true;
+            return true;//
         }
         if(root.left==null&&root.right==null){
             return true;
