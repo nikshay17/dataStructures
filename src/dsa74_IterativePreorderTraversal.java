@@ -1,10 +1,12 @@
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Stack;
 
-class Node6{
+class Node7{
     int data;
-    Node6 left;
-    Node6 right;
-    public Node6(int data){
+    Node7 left;
+    Node7 right;
+    public Node7(int data){
         this.data = data;
     }
 }
@@ -12,9 +14,10 @@ class Node6{
 
 public class dsa74_IterativePreorderTraversal {
 
-    static void PreorderTraversal(Node6 root){
-        Stack<Node6> s=new Stack<>();
-        Node6 curr=root;
+    static void PreorderTraversal(Node7 root){
+        
+        Stack<Node7> s=new Stack<>();
+        Node7 curr=root;
         while(curr!=null||s.isEmpty()==false){
 
             while(curr!=null){
@@ -35,13 +38,13 @@ public class dsa74_IterativePreorderTraversal {
 
     }
     public static void main(String[] args) {
-        Node6 root = new Node6(1);
-        root.left = new Node6(2);
-        root.right = new Node6(3);
-        root.left.left = new Node6(4);
-        root.left.right = new Node6(5);
-        root.right.left = new Node6(6);
-        root.right.right = new Node6(7);
+        Node7 root = new Node7(1);
+        root.left = new Node7(2);
+        root.right = new Node7(3);
+        root.left.left = new Node7(4);
+        root.left.right = new Node7(5);
+        root.right.left = new Node7(6);
+        root.right.right = new Node7(7);
         PreorderTraversal(root);
 
 
